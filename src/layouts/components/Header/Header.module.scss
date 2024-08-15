@@ -1,0 +1,74 @@
+.wrapper {
+  --search-boder-radius: 92px;
+  --search-height: 46px;
+  --search-top-space: 9px;
+  --search-button-width: 52px;
+  width: 100%;
+  height: var(--default-layout-header-height, 60);
+  box-shadow: 0px 1px 1px rgb(0 0 0 / 12%);
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--white);
+  z-index: 10;
+}
+.inner {
+  width: var(--default-layout-width, 1150px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--default-layout-horizontal-spacer);
+}
+
+.logo {
+}
+.logo-link {
+  display: flex;
+}
+//Actions
+
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+.action-btn {
+  position: relative;
+  color: #161823;
+  font-size: 2rem;
+  background-color: transparent;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.more-btn {
+  font-size: 2rem;
+  margin-left: 28px;
+  background-color: transparent;
+  padding: 4px;
+  cursor: pointer;
+}
+.user-avatar {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+//Maibox Notification
+.letter-notification {
+  font-family: var(--font-family);
+  font-size: 1.1rem;
+  color: var(--white);
+  background-color: var(--primary);
+  position: absolute;
+  top: 1px;
+  right: 4px;
+  padding: 2px 5px;
+  border-radius: 50px;
+}
+//Maibox Notification
