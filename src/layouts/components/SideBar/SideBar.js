@@ -3,6 +3,7 @@ import classNames from 'classnames/bind';
 import Menu, { MenuItem } from './Menu';
 import config from '~/config';
 import * as Icons from '~/components/Icons';
+import SuggestedAccounts from '~/layouts/components/SuggestedAccounts';
 const cx = classNames.bind(styles);
 function SideBar() {
   return (
@@ -27,6 +28,8 @@ function SideBar() {
           regularIcon={<Icons.LiveRegularIcon />}
         />
       </Menu>
+      <SuggestedAccounts label="Suggested accounts" />
+      <SuggestedAccounts label="Following accounts" />
     </aside>
   );
 }

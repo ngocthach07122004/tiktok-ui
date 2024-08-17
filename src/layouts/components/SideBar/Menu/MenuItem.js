@@ -15,6 +15,7 @@ function MenuItem({ title, to, solidIcon, regularIcon }) {
 MenuItem.propTypes = {
   title: PropTypes.string.isRequired,
   to: PropTypes.string.isRequired,
-  icon: PropTypes.node.isRequired,
+  solidIcon: PropTypes.node,
+  regularIcon: PropTypes.node,
 };
 export default MenuItem;
