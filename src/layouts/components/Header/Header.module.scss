@@ -1,5 +1,5 @@
 .wrapper {
-  --search-boder-radius: 92px;
+  --search-border-radius: 92px;
   --search-height: 46px;
   --search-top-space: 9px;
   --search-button-width: 52px;
@@ -72,3 +72,10 @@
   border-radius: 50px;
 }
 //Maibox Notification
+
+// Download - wrapper
+.download-wrapper {
+  position: fixed;
+  right: 5px;
+  top: 690px;
+}

@@ -27,6 +27,11 @@ import { LetterIcon, MessageIcon, UploadIcon, MagnifyingGlass } from '~/componen
 import Image from '~/components/Image';
 import Search from '../Search';
 import config from '~/config';
+import Download from '~/components/Download';
+
+import IconCustom from '~/components/IconCustom';
+import { faBookBookmark, faBookmark, faCommentDots, faPause, faPlay, faShare } from '@fortawesome/free-solid-svg-icons';
+import MenuIconVideoDefault, { MenuIconVideoExtends } from '~/components/Video/MenuIconVideo';
 
 const cx = classNames.bind(styles);
 
@@ -145,7 +150,21 @@ function Header() {
               </>
             )}
           </Menu>
+
+          {/* <Menu
+            // items={stateExtendShareIcon ? MenuIconVideoExtends : MenuIconVideoDefault}
+            items={MenuIconVideoDefault}
+          >
+            {
+              <IconCustom dataDisplay="10.8K">
+                <FontAwesomeIcon className={cx('iconSetSize')} icon={faShare} />
+              </IconCustom>
+            }
+          </Menu> */}
         </div>
+      </div>
+      <div className={cx('download-wrapper')}>
+        <Download />
       </div>
     </header>
   );

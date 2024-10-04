@@ -1,0 +1,66 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 78px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.wrapper_Icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f2;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin: 8px 0 6px 0;
+}
+
+.wrapper_Child_Icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+}
+
+.image {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.dataDisplay {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #161823bf;
+}
+
+.followAccount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  &:hover {
+    cursor: pointer;
+    background-color: #ea284e;
+  }
+  position: absolute;
+  top: 80%;
+  right: 0%;
+  transform: translate(-50%, -50%);
+}
+.plusIcon {
+  background-color: transparent;
+  color: var(--white);
+}

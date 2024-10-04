@@ -1,0 +1,39 @@
+.wrapper {
+  // min-height: 170px;
+  margin: 28px 0 40px 8px;
+  color: #16182380;
+}
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0px;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+.more {
+  font-size: 1.2rem;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.year_name_title {
+  display: block;
+  font-size: 1.2rem;
+}
+.wrapper-policy {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-law {
+  &:hover {
+    cursor: pointer;
+    color: red;
+  }
+}

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import Tippy from '@tippyjs/react/headless';
 import classNames from 'classnames/bind';
 import styles from './Menu.module.scss';
@@ -8,9 +8,20 @@ import MenuItem from './MenuItem';
 import Header from './Header';
 const cx = classNames.bind(styles);
 const defaultFn = () => {};
-function Menu({ children, items = [], hideOnClick = false, onChange = defaultFn }) {
+function Menu({
+  children,
+  items = [],
+  offsetDefault = [12, 10],
+  hideOnClick = false,
+  onChange = defaultFn,
+  onClickExtend = '',
+  visibleMenu,
+  onClickOutside,
+  onMouseEnter,
+}) {
   const [history, setHistory] = useState([{ data: items }]);
   const current = history[history.length - 1];
+  // console.log(items);
   const renderItems = () => {
     return current.data.map((item, index) => {
       const isParent = !!item.children;
@@ -19,21 +30,30 @@ function Menu({ children, items = [], hideOnClick = false, onChange = defaultFn 
           Item
           key={index}
           data={item}
-          onClick={() => {
-            if (isParent) {
-              setHistory((prev) => [...prev, item.children]);
-            } else {
-              onChange(item);
-            }
-          }}
+          onClick={
+            item.flag === '1' && onClickExtend !== ''
+              ? onClickExtend
+              : () => {
+                  if (isParent) {
+                    setHistory((prev) => [...prev, item.children]);
+                  } else {
+                    onChange(item);
+                  }
+                }
+          }
         />
       );
     });
   };
   return (
     <Tippy
+      // visible={true}
+      // onMouseEnter={onMouseEnter}
+      // visible={visibleMenu}
+      onClickOutside={onClickOutside}
+      // trigger="manual"
       hideOnClick={hideOnClick}
-      offset={[12, 10]}
+      offset={offsetDefault}
       delay={[0, 800]}
       interactive={true}
       placement="bottom-end"

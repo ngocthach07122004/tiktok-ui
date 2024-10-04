@@ -1,0 +1,19 @@
+.sidebarFooter_custom-tippy .tippy-arrow {
+  color: rgb(242, 237, 237);
+}
+
+.sidebarFooter_custom-tippy .tippy-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 208px;
+  height: 56px;
+  background-color: rgb(242, 237, 237);
+  border-radius: 8px;
+  font-size: 1.4rem;
+  color: rgba(22, 24, 35, 0.5);
+  cursor: pointer;
+}
+.sidebarFooter_custom-tippy .tippy-content:hover {
+  color: red;
+}

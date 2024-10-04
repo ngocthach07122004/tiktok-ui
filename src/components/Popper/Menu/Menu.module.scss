@@ -1,6 +1,7 @@
 //Menu wrapper
 .menu-list {
-  width: 223px;
+  min-width: 223px;
+  max-width: 280px;
   .menu-item {
     margin-left: 0;
   }

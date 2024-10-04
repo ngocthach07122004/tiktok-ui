@@ -21,6 +21,11 @@
   }
 }
 
+// .title {
+//   display: inline-block;
+//   background-color: aqua;
+//   width: 300px;
+// }
 .icon + .title,
 .title + .icon {
   margin-left: 7px;
@@ -77,4 +82,8 @@
 .large {
   min-width: 140px;
   padding: 14px 16px;
+}
+
+// Nút extend ở phần chia sẻ video
+.DownArrowScss {
 }

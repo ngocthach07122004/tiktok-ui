@@ -1,0 +1,15 @@
+.wrapper {
+  width: 216px;
+  margin-top: -10px;
+  margin-bottom: 8px;
+}
+.info {
+  display: inline-block;
+  color: #16182380;
+  font-size: 1.2rem;
+  margin-right: 4px;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
