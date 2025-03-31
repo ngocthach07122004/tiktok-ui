@@ -16,6 +16,8 @@
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 8px;
   border-radius: 16px;
   background-color: var(--white);
+  z-index: 999;
+  background-color: beige;
 }
 
 .main_header {
@@ -46,10 +48,16 @@
   }
 }
 .wrapper_close_comment {
-  // background-color: red;
+  background-color: red;
+  z-index: 999;
+  &:hover {
+    cursor: pointer;
+    background-color: brown;
+  }
 }
 
 .main_body {
+  background-color: aquamarine;
   flex: 1;
 }
 

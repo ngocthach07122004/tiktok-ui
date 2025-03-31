@@ -15,9 +15,9 @@ import AccountPreview from '~/layouts/components/AccountPreview';
 import Menu from '../Popper/Menu';
 import MenuIconVideoDefault, { MenuIconVideoExtends } from './MenuIconVideo';
 import BoxComment from '../BoxComment';
-import Comment from '~/pages/Comment/Comment';
+import Comment from '~/pages/Comment/CommentPage';
 
-// const childrenCommentComponent = [<Comment />];
+const childrenCommentComponent = <Comment />;
 
 const cx = classNames.bind(styles);
 function Video({ srcVideo }) {
@@ -123,7 +123,11 @@ function Video({ srcVideo }) {
             </IconCustom>
 
             <div onClick={onCLickCloseCommentHandler}>
-              <BoxComment stateMessage={stateMessage} onClickHandleClose={onCLickCloseCommentHandler}>
+              <BoxComment
+                stateMessage={stateMessage}
+                onClickHandleClose={onCLickCloseCommentHandler}
+                childrenMessageComponent={childrenCommentComponent}
+              >
                 {
                   <div>
                     <IconCustom dataDisplay="16.8K">

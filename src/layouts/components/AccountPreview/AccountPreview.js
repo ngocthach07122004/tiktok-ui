@@ -27,7 +27,7 @@ function AccountPreview({ description = '' }) {
         </h4>
         <p className={cx('name')}>Lê Hồ Nguyệt Minh</p>
         <p className={cx('analytics')}>
-          <strong className={cx('value')}>1.2M </strong>
+          <strong className={cx('value')}>10.2M </strong>
           <span className={cx('label')}>Followers</span>
           <strong className={cx('value')}>20.2M </strong>
           <span className={cx('label')}>Likes</span>

@@ -1,4 +1,4 @@
-import styles from './Comment.module.scss';
+import styles from './CommentPage.module.scss';
 import classNames from 'classnames/bind';
 const cx = classNames.bind(styles);
 

@@ -9,10 +9,10 @@ function comment() {
     <div className={cx('comment_wrapper')}>
       <Image />
       <div className={cx('main_body')}>
-        <span className={cx('title_name')}></span>
+        <span className={cx('title_name')}> Linhxinchao</span>
         <div className={cx('body_child')}>
           <div className={cx('body_comment')}>
-            <p className={cx('info_comment')}></p>
+            <p className={cx('info_comment')}> dùng tiktok thú vị quá đi đúng ko mọi người</p>
             <p className={cx('info_day_comment')}>
               <span className={cx('info_day')}> </span>
               <span className={cx('box_comment')}> </span>

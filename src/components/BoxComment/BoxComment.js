@@ -1,11 +1,17 @@
 import classNames from 'classnames/bind';
 import styles from './BoxComment.module.scss';
 import Tippy from '@tippyjs/react';
+import Comment from '../Comment';
 import { AnnotationIcon, EmotionIcon, IconClose, ShareIcon } from '../Icons';
+
 const cx = classNames.bind(styles);
 
 // {[220, 200]}
-function BoxComment({ onClickHandleClose, stateMessage, childrenMessageComponent }) {
+function BoxComment({ onClickHandleClose, stateMessage, children, childrenMessageComponent }) {
+  const handleOncloseBoxComment = () => {
+    console.log('check');
+    return onClickHandleClose;
+  };
   let renderMessage = () =>
     stateMessage ? (
       <div className={cx('main_container')}>
@@ -14,12 +20,19 @@ function BoxComment({ onClickHandleClose, stateMessage, childrenMessageComponent
             <span className={cx('title_comment')}>Bình luận</span>
             <span className={cx('number_of_comment')}>(8912)</span>
           </p>
-          <div onClick={onClickHandleClose} className={cx('wrapper_close_comment')}>
+          <div onClick={handleOncloseBoxComment} className={cx('wrapper_close_comment')}>
             {' '}
             <IconClose className={cx('close_comment')} />
           </div>
         </div>
-        <div className={cx('main_body')}></div>
+        <div className={cx('main_body')}>
+          {/* {
+       childrenMessageComponent.map( (index,message) => (
+         <div key={index} > {message}  </div>
+       )) } </div> */}
+
+          {<Comment />}
+        </div>
         <div className={cx('container_comment')}>
           <div className={cx('wrapper_comment')}>
             <input placeholder="Thêm bình luận..." className={cx('input_comment')} />
@@ -45,6 +58,7 @@ function BoxComment({ onClickHandleClose, stateMessage, childrenMessageComponent
       render={renderMessage}
     >
       {/* {childrenMessageComponent.forEach((MessageComponent) => MessageComponent)} */}
+      {children}
     </Tippy>
 
     // </div>
