@@ -1,3 +1,41 @@
+<h1 align="center">🎬 TikTok Clone</h1>
+
+<p align="center">
+  <em>🔥 A full-featured TikTok-style video sharing platform 🔥</em><br>
+  <strong>📱 Watch • 🎥 Upload • 💬 Comment • ❤️ Like • 🔒 Secure</strong>
+</p>
+
+---
+
+## 🚀 Introduction
+
+**TikTok Clone** is a modern web application that replicates the core functionality of TikTok — from watching short videos to uploading your own, engaging with others through likes and comments, and more. Built with a sleek UI and real-time interactions, it delivers an immersive social media experience.
+
+---
+
+## ✨ Core Features
+
+| Feature              | Description                                  |
+| -------------------- | -------------------------------------------- |
+| 📺 **Video Feed**    | Infinite scroll of trending videos           |
+| 💬 **Comments**      | Leave comments, view others’ thoughts        |
+| 🔍 **Search**        | Search videos or users by keywords           |
+| 👤 **User Profiles** | View user info, their uploaded content       |
+| 🕐 **Timestamps**    | Display upload time in human-friendly format |
+
+---
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer        | Technology                      |
+| ------------ | ------------------------------- |
+| 💻 Frontend  | React.js, Tailwind CSS, Axios   |
+| ⚙️ Dev Tools | Docker, Postman, GitHub Actions |
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
